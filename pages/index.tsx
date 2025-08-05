@@ -70,10 +70,10 @@ export default function Home() {
             </p>
             <p className="text-sm italic text-gray-400 mb-4">Next.js, React, TailwindCSS</p>
             <div className="flex gap-4">
-              <a href="https://your-live-link.com" className="text-blue-400 hover:underline" target="_blank">
+              <a href="https://novasmarts.co.za/" className="text-blue-400 hover:underline" target="_blank">
                 Live Demo
               </a>
-              <a href="https://github.com/yourusername/services-marketplace" className="text-blue-400 hover:underline" target="_blank">
+              <a href="No GitHub Repository" className="text-blue-400 hover:underline" target="_blank">
                 GitHub Repo
               </a>
             </div>
