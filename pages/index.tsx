@@ -1,115 +1,111 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              pages/index.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-gray-900 text-white px-6 py-12 max-w-4xl mx-auto space-y-20">
+      {/* Hero Section */}
+      <section className="text-center">
+        <h1 className="text-5xl font-bold mb-2">Tutu Mbuyisa</h1>
+        <p className="text-xl text-gray-400">Full-Stack Web Developer</p>
+        <a
+          href="#projects"
+          className="inline-block mt-6 px-6 py-3 bg-blue-600 rounded hover:bg-blue-700 transition"
+        >
+          See My Work
+        </a>
+      </section>
+
+      {/* About Section */}
+      <section>
+        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+        <p className="text-gray-300">
+          Hi there! My name is Tutu Mbuyisa (duh) and I’m a passionate full-stack web developer (or at least I think so😂). 
+          I enjoy building web apps that are useful, fast, and user-friendly. I’ve built two big projects: a Services Marketplace and a TikTok-style video sharing platform called Knightly. 
+          I've also worked on smaller websites with a team of 3 people, my favourite being Novasmarts.co.za 
+        </p>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects">
+        <h2 className="text-3xl font-semibold mb-8 text-center">Projects</h2>
+        <div className="grid gap-8">
+          {/* Project 1 */}
+          <div className="bg-gray-800 rounded-lg p-6 shadow">
+            <h3 className="text-2xl font-bold mb-2">Services Marketplace</h3>
+            <p className="text-gray-300 mb-3">
+              A Bark-style platform where users find local service providers, complete with ratings and reviews.
+            </p>
+            <p className="text-sm italic text-gray-400 mb-4">Next.js, React, Supabase, TailwindCSS</p>
+            <div className="flex gap-4">
+              <a href="https://your-live-link.com" className="text-blue-400 hover:underline" target="_blank">
+                Live Demo
+              </a>
+              <a href="https://github.com/yourusername/services-marketplace" className="text-blue-400 hover:underline" target="_blank">
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+
+          {/* Project 2 */}
+          <div className="bg-gray-800 rounded-lg p-6 shadow">
+            <h3 className="text-2xl font-bold mb-2">Knightly</h3>
+            <p className="text-gray-300 mb-3">
+              A vertical-scrolling video platform (like TikTok) with public creator profiles.
+            </p>
+            <p className="text-sm italic text-gray-400 mb-4">React, Next.js, Supabase, TailwindCSS</p>
+            <div className="flex gap-4">
+              <a href="https://your-live-link.com" className="text-blue-400 hover:underline" target="_blank">
+                Live Demo
+              </a>
+              <a href="https://github.com/yourusername/knightly" className="text-blue-400 hover:underline" target="_blank">
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+
+
+          {/* Project 3 */}
+          <div className="bg-gray-800 rounded-lg p-6 shadow">
+            <h3 className="text-2xl font-bold mb-2">NovaSmarts</h3>
+            <p className="text-gray-300 mb-3">
+              A Basic website focused on front-end design for a construction and renovation company.
+            </p>
+            <p className="text-sm italic text-gray-400 mb-4">Next.js, React, TailwindCSS</p>
+            <div className="flex gap-4">
+              <a href="https://your-live-link.com" className="text-blue-400 hover:underline" target="_blank">
+                Live Demo
+              </a>
+              <a href="https://github.com/yourusername/services-marketplace" className="text-blue-400 hover:underline" target="_blank">
+                GitHub Repo
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+         
+
+      </section>
+
+      {/* Skills Section */}
+      <section className="text-center">
+        <h2 className="text-3xl font-semibold mb-4">Skills</h2>
+        <div className="flex flex-wrap justify-center gap-4 text-gray-300">
+          {["JavaScript", "React", "Next.js", "TailwindCSS", "Supabase", "PostgreSQL", "Node.js"].map((skill) => (
+            <span key={skill} className="bg-gray-700 rounded-full px-4 py-2 text-sm font-medium">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="text-center">
+        <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
+        <p className="text-gray-300">
+          You can reach me at{" "}
+          <a href="mailto:your.email@example.com" className="text-blue-400 hover:underline">
+            tutumbuyisa9@gmail.ocm
+          </a>
+        </p>
+      </section>
+    </main>
+  )
 }
