@@ -18,7 +18,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
         <p className="text-gray-300">
           Hi there! My name is Tutu Mbuyisa (duh) and I&apos;m a passionate full-stack web developer (or at least I think so😂). 
-          I enjoy building web apps that are useful, fast, and user-friendly. I&apos;v built two big projects: a Services Marketplace and a TikTok-style video sharing platform called Knightly. 
+          I enjoy building web apps that are useful, fast, and user-friendly. I have built two big projects: a Services Marketplace and a TikTok-style video sharing platform called Knightly. 
           I have also worked on smaller websites with a team of 3 people, my favourite being Novasmarts.co.za 
         </p>
       </section>
@@ -35,10 +35,10 @@ export default function Home() {
             </p>
             <p className="text-sm italic text-gray-400 mb-4">Next.js, React, Supabase, TailwindCSS</p>
             <div className="flex gap-4">
-              <a href="https://your-live-link.com" className="text-blue-400 hover:underline" target="_blank">
+              <a href="https://near-21svqwuc9-tutu-mbuyisas-projects.vercel.app/services" className="text-blue-400 hover:underline" target="_blank">
                 Live Demo
               </a>
-              <a href="https://github.com/yourusername/services-marketplace" className="text-blue-400 hover:underline" target="_blank">
+              <a href="https://github.com/tutu-coder/NearMe" className="text-blue-400 hover:underline" target="_blank">
                 GitHub Repo
               </a>
             </div>
