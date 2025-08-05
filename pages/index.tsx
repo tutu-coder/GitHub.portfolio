@@ -73,9 +73,7 @@ export default function Home() {
               <a href="https://novasmarts.co.za/" className="text-blue-400 hover:underline" target="_blank">
                 Live Demo
               </a>
-              <a href="No GitHub Repository" className="text-blue-400 hover:underline" target="_blank">
-                GitHub Repo
-              </a>
+             
             </div>
           </div>
         </div>
