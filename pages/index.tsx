@@ -17,9 +17,9 @@ export default function Home() {
       <section>
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
         <p className="text-gray-300">
-          Hi there! My name is Tutu Mbuyisa (duh) and I’m a passionate full-stack web developer (or at least I think so😂). 
-          I enjoy building web apps that are useful, fast, and user-friendly. I’ve built two big projects: a Services Marketplace and a TikTok-style video sharing platform called Knightly. 
-          I've also worked on smaller websites with a team of 3 people, my favourite being Novasmarts.co.za 
+          Hi there! My name is Tutu Mbuyisa (duh) and I&apos;m a passionate full-stack web developer (or at least I think so😂). 
+          I enjoy building web apps that are useful, fast, and user-friendly. I&apos;m built two big projects: a Services Marketplace and a TikTok-style video sharing platform called Knightly. 
+          I have also worked on smaller websites with a team of 3 people, my favourite being Novasmarts.co.za 
         </p>
       </section>
 
