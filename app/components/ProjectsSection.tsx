@@ -28,7 +28,7 @@ export default function ProjectsSection() {
                 {/* Left Side - Description */}
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-4">Services Marketplace</h3>
+                    <h3 className="text-2xl font-bold mb-4">Services Marketplace (Please Sign up and search for mechanic to test)</h3>
                     <p className="text-gray-400">
                       A Bark-style platform where users find local service providers, complete with ratings and reviews.
                     </p>
@@ -99,7 +99,7 @@ export default function ProjectsSection() {
                 {/* Left Side */}
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-4">Knightly</h3>
+                    <h3 className="text-2xl font-bold mb-4">Knightly (Please sign up to test the program)</h3>
                     <p className="text-gray-400">
                       A TikTok-style video sharing platform with full-screen vertical scroll and public creator profiles.
                     </p>
