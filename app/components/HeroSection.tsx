@@ -20,7 +20,7 @@ export default function HeroSection() {
 						</h1>
 						<h2 className="text-2xl md:text-4xl font-bold text-white">Full Stack Developer</h2>
 						<p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-							Hi there! My name is Tutu Mbuyisa (duh) and I'm a passionate full-stack web developer (or at least I think so😂). I enjoy building web apps that are useful, fast, and user-friendly. 
+							Hi there! My name is Tutu Mbuyisa (duh) and I am a passionate full-stack web developer (or at least I think so😂). I enjoy building web apps that are useful, fast, and user-friendly. 
 							I have built two big(ish) projects: a Services Marketplace and a TikTok-style video sharing platform called Knightly; and I would like to share them with you.
 							I have also worked on smaller websites with a team of 3 people, my favourite being Novasmarts.co.za
 						</p>
